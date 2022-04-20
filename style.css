@@ -1,0 +1,411 @@
+.board {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 15px;
+    min-width: 1000px;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto 50px auto;
+    align-content: stretch;
+}
+
+.boardColumn {
+    font-family: "Lato", helvetica, Arial, Sans-serif;
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.boardColumn .boardColumn__header {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #8f8f8f;
+    border-radius: 5px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.boardColumn .boardColumn__title {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 5px 0 0;
+    word-wrap: break-word;
+}
+
+.boardColumn .boardColumn__taskList {
+    background: #f3f3f3;
+    padding: 20px 10px;
+    min-height: 100%;
+    height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(231,231,231);
+}
+
+.taskCard {
+    font-family: "Lato", helvetica, Arial, Sans-serif;
+    border-radius: 5px;
+    padding: 15px 15px 10px;
+    background-color: rgba(250, 250, 250, 0.5);
+    position: relative;
+    margin: 0px 1px 30px 1px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.taskCard:hover {
+    cursor: pointer;
+}
+
+/*
+.taskCard:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: 4px;
+  background: red;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+*/
+.taskCard.Working {
+    border-left-width: 15px !important;
+}
+.Working {
+    opacity: 1.0 !important;
+    background: #fff !important;
+}
+
+.Stopped {
+    opacity: 1.0 !important;
+    background: #fff !important;
+}
+
+.Waiting {
+    opacity: 50%;
+}
+
+.taskCard .taskCard__title {
+    margin: 0 0 -10px 0;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline;
+}
+
+.taskCard h5 {
+    font-weight: 700;
+    font-size: 12px;
+    color: #333;
+}
+
+.taskCard .taskCard__epicLink-wrapper {
+    margin-top: 10px;
+}
+
+.taskCard .taskCard__epicLink-title {
+    padding: 3px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #363636;
+    font-weight: 700;
+}
+
+.taskCard .taskCard__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    justify-content: center;
+    align-items: flex-start !important;
+    padding: 0 15px;
+}
+
+.taskCard__footer div {
+    width: 100%;
+}
+
+.taskCard .taskCard__type {
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: -3px;
+    color: #333;
+}
+
+.taskCard .taskCard__id {
+    font-size: 12px;
+    font-weight: 300;
+    color: #535558;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+.taskCard .taskCard__avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 500px;
+}
+
+.taskCard .taskCard__id,
+.taskCard .taskCard__avatar {
+    vertical-align: middle;
+}
+
+.vehicle_image_container {
+    margin-bottom: 25px;
+}
+
+.vehicle_image {
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.Completed {
+    border-top: 5px solid #25C836;
+}
+
+.Missing {
+    border-top: 5px solid #F82F60;
+}
+
+.Ordered {
+    border-top: 5px solid #FF6F30;
+}
+
+.Javier {
+    border-bottom: 10px solid #7B3CEC;
+}
+.Alberto {
+    border-bottom: 10px solid #25C836;
+}
+.Richie {
+    border-bottom: 10px solid #317EF9;
+}
+.Andre{
+    border-bottom: 10px solid #1ebeff;
+}
+.Koba {
+    border-bottom: 10px solid #FF6F30;
+}
+.Carlos {
+    border-bottom: 10px solid #F82F60;
+}
+.Jamie {
+    border-bottom: 10px solid #FCB303;
+}
+.Jose {
+    border-bottom: 10px solid #FF10C1;
+}
+.Dropped.Off {
+    background-color: #CFDFFF;
+}
+
+.Tear.Down {
+    background-color: #D0F0FD;
+}
+
+.Bodywork.and.Frame {
+    background-color: #C2F5E9;
+}
+
+.Parts.to.Paint {
+    background-color: #D1F7C4;
+}
+
+.Cars.to.Paint {
+    background-color: #FFEAB6;
+}
+
+.Painted {
+    background-color: #FEE2D5;
+}
+
+.Assembly {
+    background-color: #FFDCE5;
+}
+
+.Wash {
+    background-color: #FFDAF6;
+}
+
+.Delivery.to.Customer {
+    background-color: #EDE2FE;
+}
+
+.link-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.link-buttons div{
+    margin: 0 5px;
+}
+
+.board .btn-primary {
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 12px;
+    background-color: #eee;
+    border: 2px solid #999;
+    color: #000;
+    line-height: 1.5
+}
+
+.board .btn-warning {
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 12px;
+    background-color: #eee;
+    border: 2px solid #999;
+    color: #000;
+    line-height: 1.5
+}
+
+.board .btn-warning:hover {
+    border-color: #ff9d00;
+}
+.board .btn-primary:hover {
+    border-color: #0061FF;
+}
+.board .btn-danger {
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 12px;
+    background-color: #eee;
+    border: 2px solid #999;
+    color: #000;
+    line-height: 1.5
+}
+
+.board .btn-danger:hover {
+    border-color: #eb0035;
+}
+
+.board .btn-success {
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 12px;
+    background-color: #eee;
+    border: 2px solid #999;
+    color: #000;
+    line-height: 1.5
+}
+
+.board .btn-success:hover {
+    border-color: #009b65;
+}
+.taskCard__header {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin-bottom: 0;
+}
+
+.header-text {
+    width: 75%;
+    margin-right: 5px;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: #FAFAFA;
+    border: 1px solid rgb(231,231,231);
+}
+.name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.color {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.Alberto_color {
+    background-color: #25C836;
+}
+.Andre_color {
+    background-color: #1ebeff;
+}
+.Carlos_color {
+    background-color: #F82F60;
+}
+.Jamie_color {
+    background-color: #FCB303;
+}
+.Javier_color {
+    background-color: #7B3CEC;
+}
+.Jose_color {
+    background-color: #FF10C1;
+}
+.Koba_color {
+    background-color: #FF6F30;
+}
+.Richie_color {
+    background-color: #317EF9;
+}
+
+.material-icons-outlined {
+    font-size: 16px !important;
+    font-weight: 700;
+}
+
+.next-indicator {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 18px;
+    border-radius: 0 5px 5px 0;
+    background-color: #32a852;
+}
+
+.next-indicator span {
+    line-height: .8;
+    color: #fff;
+    position: relative;
+    right: -1px;
+    top: 50%;
+}
+
+.priority-indicator {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 18px;
+    border-radius: 5px 0 0 5px;
+    background-color: #cf2323;
+}
+
+.priority-indicator span {
+    line-height: .8;
+    color: #fff;
+    position: relative;
+    right: -1px;
+    top: 50%;
+}
