@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      //hides articles
+      $(".expandable-row").hide();
+      //article accordian
+      $(".show-details").click(function () {
+        $(this).parent().siblings(".expandable-row").slideToggle("slow");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="board">
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Dropped Off</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Waiting not-next">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title ">0</h4>
+              <h5>BREUER EXPEDITION</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2020 FORD EXPEDITION WHT</p>
+              <p class="taskCard__id">03/08/22 12:52PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/4YZjnnDjPv"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="4YZjnnDjPv" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/4YZjnnDjPv"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="4YZjnnDjPv" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="4YZjnnDjPv">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="4YZjnnDjPv">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Tear Down</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">0</h4>
+              <h5></h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2020 KIA SPORTAGE</p>
+              <p class="taskCard__id">03/14/22 11:52AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/l5nQx1LjxY"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="l5nQx1LjxY" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/l5nQx1LjxY"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="l5nQx1LjxY" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="l5nQx1LjxY">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="l5nQx1LjxY">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">10506</h4>
+              <h5>DINEWITZ/ GEICO</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1647355501-Left-Rear.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2019 SUBARU OUTBACK</p>
+              <p class="taskCard__id">03/14/22 10:44AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/3xPjX7YQKG"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="3xPjX7YQKG" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/3xPjX7YQKG"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="3xPjX7YQKG" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="3xPjX7YQKG">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="3xPjX7YQKG">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Javier">10522</h4>
+              <h5>ORZEL/ NATIONWIDE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1649099502-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2022 VOLVO XC60</p>
+              <p class="taskCard__id">03/16/22 03:12PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/eykNODvQDY"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="eykNODvQDY" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/eykNODvQDY"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="eykNODvQDY" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="eykNODvQDY">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="eykNODvQDY">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">10524</h4>
+              <h5>SCHMELCZER/ ADIRONDAK</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1649100246-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2020 HONDA ODYSSEY</p>
+              <p class="taskCard__id">03/29/22 03:24PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/698rdO2jZw"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="698rdO2jZw" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/698rdO2jZw"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="698rdO2jZw" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="698rdO2jZw">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="698rdO2jZw">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Bodywork and Frame</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">10467</h4>
+              <h5>NADLER/ NATIONWIDE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 HYUNDAI TUCSON SE</p>
+              <p class="taskCard__id">03/28/22 10:16AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/53GN69vrzx"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="53GN69vrzx" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/53GN69vrzx"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="53GN69vrzx" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="53GN69vrzx">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="53GN69vrzx">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10473</h4>
+              <h5>WEBER/ ADIRONDAK</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1645799019-10473-WEBER.jfif">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2019 HONDA ODYSSEY</p>
+              <p class="taskCard__id">02/24/22 09:23AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/ka6jMnor75"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="ka6jMnor75" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/ka6jMnor75"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="ka6jMnor75" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="ka6jMnor75">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="ka6jMnor75">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Carmine">10499</h4>
+              <h5>RAVITZ/ PROGRESSIVE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1648580612-Photo-07.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2018 GMC YUKON XL</p>
+              <p class="taskCard__id">03/01/22 03:04PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/5m9N07nrzq"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="5m9N07nrzq" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/5m9N07nrzq"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="5m9N07nrzq" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="5m9N07nrzq">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="5m9N07nrzq">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Yossi">10483</h4>
+              <h5>UNGAR/ STATEFARM</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646340728-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2022 JEEP GRAND CHEROKEE</p>
+              <p class="taskCard__id">03/01/22 03:51PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/JDXQ8E0jYR"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="JDXQ8E0jYR" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/JDXQ8E0jYR"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="JDXQ8E0jYR" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="JDXQ8E0jYR">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="JDXQ8E0jYR">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Parts to Paint</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Working">
+          <div class="priority-indicator">
+            <span class="material-icons-outlined">priority_high</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10430</h4>
+              <h5>REINHOLD</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 HONDA ODYSSEY</p>
+              <p class="taskCard__id">02/15/22 02:37PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/ObEjEONK5p"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="ObEjEONK5p" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/ObEjEONK5p"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="ObEjEONK5p" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="ObEjEONK5p">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="ObEjEONK5p">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10214</h4>
+              <h5>VIP COLLISION/ CASH</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646058122-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 HONDA ODYSSEY</p>
+              <p class="taskCard__id">02/01/22 09:21AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/DVWQWRRNZ4"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="DVWQWRRNZ4" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/DVWQWRRNZ4"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="DVWQWRRNZ4" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="DVWQWRRNZ4">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="DVWQWRRNZ4">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">10485</h4>
+              <h5>FRIEDMAN/ NATIONAL GEN</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646340868-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 FORD EXPLORER</p>
+              <p class="taskCard__id">02/15/22 03:54PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/VX9QoZeNwY"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="VX9QoZeNwY" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/VX9QoZeNwY"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="VX9QoZeNwY" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="VX9QoZeNwY">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="VX9QoZeNwY">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Alberto">123</h4>
+              <h5>TEST</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1648227746-rklzk72O-XaEZRxcEf-edit-.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">1995 Honda NSX</p>
+              <p class="taskCard__id">03/24/22 12:46PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/0DzjGXarYp"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="0DzjGXarYp" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/0DzjGXarYp"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="0DzjGXarYp" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="0DzjGXarYp">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="0DzjGXarYp">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard ">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Carlos">10153</h4>
+              <h5>Fried/Travelers</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type"></p>
+              <p class="taskCard__id">NaN/NaN/N NaN:NaNAM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/q3kjZDVN6V"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="q3kjZDVN6V" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/q3kjZDVN6V"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="q3kjZDVN6V" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="q3kjZDVN6V">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="q3kjZDVN6V">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Cars to Paint</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Stopped">
+          <div class="next-indicator">
+            <span class="material-icons-outlined">arrow_forward</span>
+          </div>
+          <div class="priority-indicator">
+            <span class="material-icons-outlined">priority_high</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10486</h4>
+              <h5>GRUBER/ GEICO</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646340984-Right-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 CHRYSLER PACIFICA</p>
+              <p class="taskCard__id">02/17/22 03:56PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/L5MjKqxN0k"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="L5MjKqxN0k" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/L5MjKqxN0k"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="L5MjKqxN0k" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="L5MjKqxN0k">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="L5MjKqxN0k">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <div class="priority-indicator">
+            <span class="material-icons-outlined">priority_high</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Yossi">10440</h4>
+              <h5>KLEIN/ CASH BUMPER</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2020 LINCOLN NAVIGATOR</p>
+              <p class="taskCard__id">03/15/22 01:21PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/oGWN5eqNlA"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="oGWN5eqNlA" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/oGWN5eqNlA"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="oGWN5eqNlA" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="oGWN5eqNlA">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="oGWN5eqNlA">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Andre">10495</h4>
+              <h5>HILLEL/ ADIRONDAK</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1648150706-Photo-02.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 HONDA PILOT</p>
+              <p class="taskCard__id">03/02/22 03:41PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/LX6QaLwNZk"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="LX6QaLwNZk" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/LX6QaLwNZk"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="LX6QaLwNZk" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="LX6QaLwNZk">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="LX6QaLwNZk">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Assembly</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Working">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jamie">10437</h4>
+              <h5>UNGAR/ ADIRONDAK</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1645040716-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2019 FORD EXPLORER</p>
+              <p class="taskCard__id">02/14/22 02:44PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/m72NporwvZ"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="m72NporwvZ" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/m72NporwvZ"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="m72NporwvZ" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="m72NporwvZ">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="m72NporwvZ">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Working">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Javier">10504</h4>
+              <h5>KLEIM/ ALLSTATE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1647273001-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2022 KIA TELLURIDE</p>
+              <p class="taskCard__id">03/02/22 11:47AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/m72NpJojwv"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="m72NpJojwv" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/m72NpJojwv"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="m72NpJojwv" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="m72NpJojwv">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="m72NpJojwv">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <div class="priority-indicator">
+            <span class="material-icons-outlined">priority_high</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Koba">10517</h4>
+              <h5>SANTA-CRUZ</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1648131687-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2011 FORD F-150</p>
+              <p class="taskCard__id">03/24/22 10:20AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/kOGQ3ogQln"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="kOGQ3ogQln" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/kOGQ3ogQln"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="kOGQ3ogQln" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="kOGQ3ogQln">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="kOGQ3ogQln">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jose">10421</h4>
+              <h5>FISCHER/ GEICO</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1645039267-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2020 KIA SORENTO</p>
+              <p class="taskCard__id">01/25/22 02:20PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/X9EjVXNo2K"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="X9EjVXNo2K" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/X9EjVXNo2K"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="X9EjVXNo2K" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="X9EjVXNo2K">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="X9EjVXNo2K">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jose">10480</h4>
+              <h5>WEISS</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1645456708-HONDA-PASSPRT.jpeg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 HONDA PASSPORT</p>
+              <p class="taskCard__id">02/20/22 09:15AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/kVXr7xNJed"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="kVXr7xNJed" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/kVXr7xNJed"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="kVXr7xNJed" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="kVXr7xNJed">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="kVXr7xNJed">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Carlos">10489</h4>
+              <h5>RABINOVICH/ ERIE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646662883-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2019 FORD EDGE</p>
+              <p class="taskCard__id">03/01/22 03:58PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/DVarwKJrOR"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="DVarwKJrOR" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/DVarwKJrOR"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="DVarwKJrOR" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="DVarwKJrOR">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="DVarwKJrOR">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jose">10490</h4>
+              <h5>ABROMOVICI/ ALLSTATE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646671600-Photo-02.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2021 TOYOTA SIENNA XLE</p>
+              <p class="taskCard__id">03/07/22 11:46AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/X9EjVzXjo2"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="X9EjVzXjo2" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/X9EjVzXjo2"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="X9EjVzXjo2" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="X9EjVzXjo2">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="X9EjVzXjo2">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10511</h4>
+              <h5>BERNHOLTZ/ STATEFARM</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1648131271-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2019 INFINITI QX60</p>
+              <p class="taskCard__id">03/21/22 10:14AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/W0VNqy8Nml"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="W0VNqy8Nml" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/W0VNqy8Nml"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="W0VNqy8Nml" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="W0VNqy8Nml">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="W0VNqy8Nml">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Waiting">
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jose">10508</h4>
+              <h5>UNGAR/ BDY</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image" src="">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2011 FORD TRANSIT CONNECT</p>
+              <p class="taskCard__id">02/23/22 03:07PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/4AXQvvaQLY"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="4AXQvvaQLY" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/4AXQvvaQLY"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="4AXQvvaQLY" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="4AXQvvaQLY">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="4AXQvvaQLY">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <div class="taskCard Stopped">
+          <div class="priority-indicator">
+            <span class="material-icons-outlined">priority_high</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Jose">10415</h4>
+              <h5>LICHTER/ NATIONWIDE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1645038695-Right-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2022 JEEP WAGONEER</p>
+              <p class="taskCard__id">01/13/22 02:10PM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/DVarwJjORP"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="DVarwJjORP" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/DVarwJjORP"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="DVarwJjORP" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="DVarwJjORP">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="DVarwJjORP">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="boardColumn">
+      <header class="boardColumn__header">
+        <p class="boardColumn__title">Wash</p>
+      </header>
+      <div class="boardColumn__taskList">
+        <div class="taskCard Stopped">
+          <div class="next-indicator">
+            <span class="material-icons-outlined">arrow_forward</span>
+          </div>
+          <header class="taskCard__header">
+            <div class="header-text">
+              <h4 class="taskCard__title Richie">10470</h4>
+              <h5>RIVERS/ ALLSTATE</h5>
+            </div>
+            <div class="vehicle_image_container">
+              <img class="vehicle_image"
+                src="https://8232-application-data-2273.s3.amazonaws.com/DzjGlnarYp/1646067191-Left-Front.jpg">
+            </div>
+          </header>
+          <footer class="taskCard__footer">
+            <div>
+              <p class="taskCard__type">2007 FORD EDGE</p>
+              <p class="taskCard__id">02/21/22 11:52AM</p>
+              <div class="link-buttons">
+                <div><a href="#!/shop-board/service-details-2/4PzQ4yGjJG"
+                    class="btn btn-primary tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="2"
+                    data-tb-rid="4PzQ4yGjJG" data-tb-page-title="View" data-tb-page-id="K2ejl6ONo9">View</a></div>
+                <div><a href="#!/new-page/edit-service-page-1/4PzQ4yGjJG"
+                    class="btn btn-warning tb-link-action-click tb-link-in-popup" tb-open-popup="1" data-tb-id="1"
+                    data-tb-rid="4PzQ4yGjJG" data-tb-page-title="Move" data-tb-page-id="W4yQk4jgPK">Move</a></div>
+              </div>
+              <div class="link-buttons">
+                <div><a href="javascript:void(0)" class="btn btn-success tb-link-action-click" data-tb-id="3"
+                    data-tb-rid="4PzQ4yGjJG">Start</a></div>
+                <div><a href="javascript:void(0)" class="btn btn-danger tb-link-action-click" data-tb-id="4"
+                    data-tb-rid="4PzQ4yGjJG">Stop</a></div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
