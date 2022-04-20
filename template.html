@@ -1,0 +1,380 @@
+<div class="board">
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Dropped Off</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Dropped Off"}}
+            <div class="taskCard {{field_99}} {{field_101}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Tear Down</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Tear Down"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Bodywork and Frame</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Bodywork and Frame"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Parts to Paint</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Parts to Paint"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Cars to Paint</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Cars to Paint"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Assembly</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Assembly"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="boardColumn">
+        <header class="boardColumn__header">
+            <p class="boardColumn__title">Wash</p>
+        </header>
+        <div class="boardColumn__taskList">
+            {{#each records}}
+            {{#is field_43 "Wash"}}
+            <div class="taskCard {{field_99}}">
+                {{#is field_101 "next"}}
+                <div class="next-indicator">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                {{/is}}
+                {{#is field_69 "1 | Urgent"}}
+                    <div class="priority-indicator">
+                        <span class="material-icons-outlined">priority_high</span>
+                    </div>
+                    {{/is}}
+                <header class="taskCard__header">
+                    <div class="header-text">
+                        <h4 class="taskCard__title {{field_68}}">{{field_49}}</h4>
+                        <h5>{{field_39}}</h5>
+                    </div>
+                    <div class="vehicle_image_container">
+                        <img class="vehicle_image" src="{{field_63}}" />
+                    </div>
+                </header>
+                <footer class="taskCard__footer">
+                    <div>
+                        <p class="taskCard__type">{{field_50}}</p>
+                        <p class="taskCard__id">{{formatDate field_42 "%m/%d/%y %I:%M%p"}}</p>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="2" tb-value="View" tb-open-popup="1" class="btn btn-primary"}}</div>
+                            <div>{{tb_link this tb-id="1" tb-value="Move" tb-open-popup="1" class="btn btn-warning"}}</div>
+                        </div>
+                        <div class="link-buttons">
+                            <div>{{tb_link this tb-id="3" class="btn btn-success"}}</div>
+                            <div>{{tb_link this tb-id="4" class="btn btn-danger"}}</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            {{/is}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="users">
+    <div class="user-box">
+        <div class="name">
+            <div class="color">
+            </div>
+            {{tb_filter tb-id=9 tb-value="View All" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Alberto_color">
+            </div>
+            {{tb_filter tb-id=1 tb-value="Alberto" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Andre_color">
+            </div>
+            {{tb_filter tb-id=2 tb-value="Andre" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Carlos_color">
+            </div>
+            {{tb_filter tb-id=3 tb-value="Carlos" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Jamie_color">
+            </div>
+            {{tb_filter tb-id=4 tb-value="Jamie" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Javier_color">
+            </div>
+            {{tb_filter tb-id=5 tb-value="Javier" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Jose_color">
+            </div>
+            {{tb_filter tb-id=6 tb-value="Jose" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Koba_color">
+            </div>
+            {{tb_filter tb-id=7 tb-value="Koba" tb-icon="fa-clouds"}}
+        </div>
+        <div class="name">
+            <div class="color Richie_color">
+            </div>
+            {{tb_filter tb-id=8 tb-value="Richie" tb-icon="fa-clouds"}}
+        </div>
+    </div>
+</div>
